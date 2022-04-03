@@ -3,7 +3,7 @@
 <p><%= @restaurant.rating %></p>
 
 <%= link_to "Home", restaurants_path %>
-
+<%= link_to "Edit restaurant", restaurants_path %>
 <%= link_to "Delete #{@restaurant.name}",
             restaurant_path(@restaurant),
             method: :delete,
