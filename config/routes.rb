@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 #  # Destroy a restaura dnt
 #   delete "restaurants/:id",   to: "restaurants#destroy"
 
+  root "restaurants#index"
+
   resources :restaurants
 end

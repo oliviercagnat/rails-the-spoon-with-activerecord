@@ -3,8 +3,7 @@
 <p><%= @restaurant.rating %></p>
 
 <%= link_to "Home", restaurants_path %>
-<%= link_to "Edit restaurant", restaurants_path %>
-<%= link_to "Delete #{@restaurant.name}",
+<%= link_to "Edit restaurant", edit_restaurant_path(@restaurant) %>
+<%= button_to "Delete #{@restaurant.name}",
             restaurant_path(@restaurant),
-            method: :delete,
-            data: { confirm: "Are you sure?" } %>
+            method: :delete %>
